@@ -1,0 +1,30 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="card border-0 shadow-sm bg-light">
+        <div class="card-header">
+          Sign In
+        </div>
+        <div class="card-body lead fs-6">
+          <div class="lead fw-bold text-dark"><span class="text">Hi, Welcome</span></div>
+          <form class="mt-3" method="post" action="http://localhost:8080/api/user">
+            <div class="form-check">
+              <label for="username">Username</label>
+              <input class="form-control" type="text" name="username" id="username">
+            </div>
+            <div class="form-check">
+              <label for="password">Password</label>
+              <input class="form-control" type="password" name="password" id="password">
+              <div class="form-text">Your information will be kept safe</div>
+            </div>
+            <div class="form-check mt-2">
+              <button class="btn btn-sm btn-outline-dark w-50" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>

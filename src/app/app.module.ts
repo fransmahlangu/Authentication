@@ -9,6 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import {HttpClientModule} from "@angular/common/http";
 import { SigninComponent } from './signin/signin.component';
 import { SignoutComponent } from './signout/signout.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SignoutComponent } from './signout/signout.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
