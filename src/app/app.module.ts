@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import {HttpClientModule} from "@angular/common/http";
+import { SigninComponent } from './signin/signin.component';
+import { SignoutComponent } from './signout/signout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    SigninComponent,
+    SignoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
